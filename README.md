@@ -1,2 +1,1 @@
-# npm boilertemplate
-## How to use it
+# npm typescript babel package template
