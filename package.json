@@ -1,0 +1,38 @@
+{
+    "name": "npm-package",
+    "version": "0.0.0",
+    "description": "",
+    "main": "./dist/utils/utils.js",
+    "bin": {
+      "sponsors": "./dist/global.js"
+    },
+    "directories": {
+      "dist": "dist",
+      "src": "src"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\"",
+      "start": "nodemon --exec babel-node src/server.js",
+      "build": "babel src --out-dir dist",
+      "serve": "node dist/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "preferGlobal": true,
+    "devDependencies": {
+      "@babel/cli": "^7.4.4",
+      "@babel/core": "^7.4.5",
+      "@babel/node": "^7.4.5",
+      "@babel/preset-env": "^7.4.5",
+      "babel-preset-minify": "^0.5.0",
+      "nodemon": "^1.18.3"
+    },
+    "url": "https://github.com/LuisPaGarcia/",
+    "bugs": "https://github.com/LuisPaGarcia/",
+    "homepage": "https://luispa.dev",
+    "dependencies": {
+      "prompt": "^1.0.0"
+    }
+  }
+  
