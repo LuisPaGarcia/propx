@@ -1,1 +1,1 @@
-# npm typescript babel package template
+# Safely accessing deeply nested values in JavaScript
