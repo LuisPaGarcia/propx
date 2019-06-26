@@ -6,12 +6,12 @@
  * @param {*} p counter for loop
  * @param {*} undef undefined by default
  */
-function propAccessor(object, key, def, p, undef) {
-  key = key.split ? key.split('.') : key;
-  for (p = 0; p < key.length; p++) {
-    object = object ? object[key[p]] : undef;
-  }
-  return object === undef ? def : object;
+function propAccessor(object: Object, key: string | string[], def: any, p?: number, undef?: undefined) {
+	key = (<string>key).split ? (<string>key).split('.') : key;
+	for (p = 0; p < key.length; p++) {
+		object = object ? object[key[p]] : undef;
+	}
+	return object === undef ? def : object;
 }
 
 export default propAccessor;

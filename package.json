@@ -2,7 +2,7 @@
   "name": "propx",
   "version": "0.0.1",
   "description": "Safely accessing deeply nested values in JavaScript",
-  "main": "./dist/global.js",
+  "main": "./dist/index.js",
   "directories": {
     "dist": "dist",
     "src": "src"
