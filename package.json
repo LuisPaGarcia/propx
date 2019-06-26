@@ -19,7 +19,8 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "babel src --out-dir dist --extensions \".ts\""
+    "build": "babel src --out-dir dist --extensions \".ts\"",
+    "build-test": "babel tests --out-dir tests --extensions \".ts\""
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
