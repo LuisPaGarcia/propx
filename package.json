@@ -1,13 +1,18 @@
 {
   "name": "propx",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Safely accessing deeply nested values in JavaScript",
   "main": "./dist/index.js",
   "directories": {
     "dist": "dist",
     "src": "src"
   },
-  "keywords": ["props", "propx", "dot", "notation"],
+  "keywords": [
+    "props",
+    "propx",
+    "dot",
+    "notation"
+  ],
   "author": "https://github.com/luispagarcia/",
   "repository": {
     "type": "git",
