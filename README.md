@@ -6,7 +6,7 @@
 $ npm install propx 
 ```
 
-1. or yarn:
+ or yarn:
 ```bash
 $ yarn add propx 
 ```

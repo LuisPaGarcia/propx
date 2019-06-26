@@ -7,7 +7,7 @@
     "dist": "dist",
     "src": "src"
   },
-  "keywords": [],
+  "keywords": ["props", "propx", "dot", "notation"],
   "author": "https://github.com/luispagarcia/",
   "repository": {
     "type": "git",
