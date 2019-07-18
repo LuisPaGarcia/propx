@@ -25,6 +25,7 @@
     "test": "echo \"Error: no test specified\"",
     "build-babel": "babel src --out-dir dist --extensions \".ts\"",
     "build": "tsc -d",
+    "prepublish": "rm -rf ./dist && npm run build",
     "build-test": "babel tests --out-dir tests --extensions \".ts\""
   },
   "devDependencies": {},
