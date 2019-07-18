@@ -4,9 +4,10 @@
         "module": "commonjs",
         "declaration": false,
         "noImplicitAny": false,
-        "removeComments": true,
+        "removeComments": false,
         "noLib": false,
-        "outDir": "./dist"
+        "outDir": "./dist",
+        
     },
     "include": [
         "**/*"

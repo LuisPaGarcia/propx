@@ -1,5 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//@ts-check
+/**
+ * @param {object} object base object to inject new prop
+ * @param {string} path path to set the object
+ * @param {any} value value to set
+ */
 function propSetter(object, path, value) {
     function pathSeg(path) {
         var pathAr = path.split('.');
@@ -36,3 +42,13 @@ function propSetter(object, path, value) {
     return JSON.parse(JSON.stringify(ret));
 }
 exports.default = propSetter;
+/**
+ * const biz = propSetter({}, 'obj1.obj2', 'c');
+ * console.log(biz);
+ * // {obj1: {obj2: 'c'}}
+ *
+ * const object = {rep: {bar: 'a'}};
+ * propSetter(object, 'rep.bar', 'b');
+ * console.log(object);
+ * // {rep: {bar: 'b'}}
+ */
