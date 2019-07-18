@@ -67,3 +67,7 @@ function get(object: Object, key: string | string[], def: any) {
 }
 
 ```
+
+## TODO:
+- [ ] Write tests
+- [ ] Use `microbundle` to generate module units.
