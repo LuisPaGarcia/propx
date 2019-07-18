@@ -1,6 +1,6 @@
 {
   "name": "propx",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Safely accessing deeply nested values in JavaScript",
   "main": "./dist/index.js",
   "files": [
