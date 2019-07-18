@@ -4,8 +4,7 @@
   "description": "Safely accessing deeply nested values in JavaScript",
   "main": "./dist/index.js",
   "directories": {
-    "dist": "dist",
-    "src": "src"
+    "dist": "dist"
   },
   "keywords": [
     "props",
