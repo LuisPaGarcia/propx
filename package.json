@@ -1,34 +1,27 @@
 {
-  "name": "propx",
-  "version": "1.0.7",
-  "description": "Safely accessing deeply nested values in JavaScript",
-  "main": "./dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "props",
-    "propx",
-    "dot",
-    "notation"
-  ],
-  "author": "https://github.com/luispagarcia/",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LuisPaGarcia/propx.git"
-  },
-  "bugs": {
-    "url": "https://github.com/LuisPaGarcia/propx/issues"
-  },
-  "license": "MIT",
-  "scripts": {
-    "clean": "rm -rf ./dist",
-    "test": "echo \"Error: no test specified\"",
-    "build-babel": "babel src --out-dir dist --extensions \".ts\"",
-    "build": "npm run clean && tsc -d",
-    "prepublish": "npm run clean && npm run build",
-    "build-test": "babel tests --out-dir tests --extensions \".ts\""
-  },
-  "devDependencies": {},
-  "dependencies": {}
+	"name": "propx",
+	"version": "1.0.7",
+	"description": "Safely accessing deeply nested values in JavaScript",
+	"main": "./dist/index.js",
+	"files": ["dist"],
+	"keywords": ["props", "propx", "dot", "notation"],
+	"author": "https://github.com/luispagarcia/",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LuisPaGarcia/propx.git"
+	},
+	"bugs": {
+		"url": "https://github.com/LuisPaGarcia/propx/issues"
+	},
+	"license": "MIT",
+	"scripts": {
+		"clean": "rm -rf ./dist",
+		"test": "node ./test/test.js",
+		"build-babel": "babel src --out-dir dist --extensions \".ts\"",
+		"build": "npm run clean && tsc -d",
+		"prepublish": "npm run clean && npm run build",
+		"build-test": "babel tests --out-dir tests --extensions \".ts\""
+	},
+	"devDependencies": {},
+	"dependencies": {}
 }
