@@ -1,5 +1,34 @@
 # Safely accessing deeply nested values ⚡️
 
+## For [deno.land](https://deno.land/) 
+
+```typescript
+import { get, set } from "https://raw.githubusercontent.com/LuisPaGarcia/propx/master/mod.ts";
+
+var obj = {
+  child:{
+    value: 1
+  }
+}
+
+// get
+console.log( get(obj, 'child.value') ) // 1
+console.log( get(obj, 'child.value.nonexist') ) // undefined
+console.log( get(obj, 'child.value.nonexist', "10") ) // 10
+
+// set
+console.log( set(obj, 'child.otherValue', ['hey']) )
+// -> 
+// {
+//   child:{
+//     value: 1,
+//     otherValue: ['hey']
+//   }
+// }
+```
+
+## For Node.js 
+
 1. Install it using npm:
 
 ```bash
